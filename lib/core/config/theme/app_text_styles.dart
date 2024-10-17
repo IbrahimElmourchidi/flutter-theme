@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 class AppTextStyles {
   const AppTextStyles._();
-
-  // headings
-  static const headingH6 = TextStyle(
+  // heading
+  static const TextStyle headingH6 = TextStyle(
+    fontSize: 18,
     fontFamily: AppFonts.manrope,
     fontWeight: FontWeight.bold,
-    fontSize: 18,
+    letterSpacing: 0,
     height: 1.4,
   );
 

@@ -1,13 +1,10 @@
-import 'package:demo_app/core/common/cubits/theme_mode_cubit/theme_mode_cubit.dart';
-import 'package:demo_app/core/config/theme/app_colors.dart';
-import 'package:demo_app/core/config/theme/app_fonts.dart';
-import 'package:demo_app/core/config/theme/text_styles.dart';
-import 'package:demo_app/core/extensions/context_extension.dart';
+import 'package:demo_app/core/config/theme/cubit/theme_cubit.dart';
+import 'package:demo_app/core/config/theme/extensions/theme_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DemoScreen extends StatelessWidget {
-  const DemoScreen({super.key});
+  DemoScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +17,6 @@ class DemoScreen extends StatelessWidget {
             children: [
               const Text(
                 "Demo Screen",
-                style: AppTextStyles.headingH1,
               ),
               const SizedBox(
                 height: 20,
@@ -32,9 +28,11 @@ class DemoScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const ElevatedButton(
+              ElevatedButton(
                 onPressed: null,
-                child: Text("disabled button"),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(double.infinity, 48)),
+                child: const Text("disabled button"),
               ),
               const SizedBox(
                 height: 20,
@@ -53,11 +51,13 @@ class DemoScreen extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  context.read<ThemeModeCubit>().updateTheme(
-                        context.isDarkMode ? ThemeMode.light : ThemeMode.dark,
-                      );
+                  if (context.isDarkMode) {
+                    context.read<ThemeCubit>().updateTheme(ThemeMode.light);
+                  } else {
+                    context.read<ThemeCubit>().updateTheme(ThemeMode.dark);
+                  }
                 },
-                child: Text("Toggle Theme"),
+                child: const Text("Toggle Theme"),
               ),
             ],
           ),

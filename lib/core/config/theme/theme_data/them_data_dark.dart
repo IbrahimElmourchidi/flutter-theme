@@ -3,25 +3,25 @@ import 'package:demo_app/core/config/theme/app_fonts.dart';
 import 'package:demo_app/core/config/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-ThemeData getLightTheme() {
+ThemeData getDarkTheme() {
   return ThemeData(
-    scaffoldBackgroundColor: AppColors.grey0,
-    brightness: Brightness.light,
+    scaffoldBackgroundColor: AppColors.grey900,
+    brightness: Brightness.dark,
     fontFamily: AppFonts.manrope,
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primary300,
-      brightness: Brightness.light,
+      brightness: Brightness.dark,
     ),
     textTheme: ThemeData.light().textTheme.apply(
-          bodyColor: AppColors.grey900,
-          displayColor: AppColors.grey900,
+          bodyColor: AppColors.grey0,
+          displayColor: AppColors.grey0,
         ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primary300,
         foregroundColor: AppColors.grey0,
-        disabledBackgroundColor: AppColors.grey100,
-        disabledForegroundColor: AppColors.grey0,
+        disabledBackgroundColor: AppColors.grey800,
+        disabledForegroundColor: AppColors.grey400,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -49,9 +49,9 @@ ThemeData getLightTheme() {
       ),
       fillColor: WidgetStateColor.resolveWith((states) {
         if (states.contains(WidgetState.focused)) {
-          return AppColors.primary0;
+          return AppColors.darkFillColor;
         }
-        return AppColors.grey0;
+        return AppColors.grey800;
       }),
       filled: true,
       hintStyle: AppTextStyles.mRegular.copyWith(color: AppColors.grey400),

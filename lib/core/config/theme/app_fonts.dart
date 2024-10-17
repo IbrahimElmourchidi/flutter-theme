@@ -1,4 +1,4 @@
 class AppFonts {
   const AppFonts._();
-  static const String manrope = 'Manrope';
+  static const manrope = 'Manrope';
 }

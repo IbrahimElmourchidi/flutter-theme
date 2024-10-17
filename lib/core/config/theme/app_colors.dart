@@ -9,7 +9,7 @@ class AppColors {
   static const primary50 = Color(0xff91c6a9);
   static const primary100 = Color(0xff5fab82);
   static const primary200 = Color(0xff409b69);
-  static const primary300 = Color(0xff108244);
+  static const primary300 = Color(0xff20643f);
 
   // grey scale
   static const grey900 = Color(0xff0d0d12);
@@ -56,6 +56,9 @@ class AppColors {
   static const sky25 = Color(0xffd1f0fa);
   static const sky0 = Color(0xfff0fbff);
 
+  // shadow
+  static const shadow1Color = Color(0xff1A13A1);
+
   // extra
-  static const darkFilled = Color(0xff07371D);
+  static const darkFillColor = Color(0xff07371D);
 }
