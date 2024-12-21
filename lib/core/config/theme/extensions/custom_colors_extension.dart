@@ -1,4 +1,4 @@
-import 'package:demo_app/core/config/theme/app_colors.dart';
+import '../app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomColors {

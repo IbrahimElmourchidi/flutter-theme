@@ -1,4 +1,4 @@
-import 'package:demo_app/core/config/theme/app_fonts.dart';
+import 'app_fonts.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyles {

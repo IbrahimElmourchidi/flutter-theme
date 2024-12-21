@@ -3,13 +3,59 @@ import 'package:flutter/material.dart';
 class AppColors {
   const AppColors._();
 
-  // primary
-  static const primary0 = Color(0xffe7f3ec);
-  static const primary25 = Color(0xffb5d8c5);
-  static const primary50 = Color(0xff91c6a9);
-  static const primary100 = Color(0xff5fab82);
-  static const primary200 = Color(0xff409b69);
-  static const primary300 = Color(0xff20643f);
+  // Light Green Theme
+  static const primaryLightGreen0 = Color(0xffe7f3ec);
+  static const primaryLightGreen25 = Color(0xffb5d8c5);
+  static const primaryLightGreen50 = Color(0xff91c6a9);
+  static const primaryLightGreen100 = Color(0xff5fab82);
+  static const primaryLightGreen200 = Color(0xff409b69);
+  static const primaryLightGreen300 = Color(0xff20643f);
+  static const scaffoldBackgroundLightGreen = Color(0xffe7f3ec);
+
+// Light Blue Theme
+  static const primaryLightBlue0 = Color(0xffe7f3fc);
+  static const primaryLightBlue25 = Color(0xffb5d8f5);
+  static const primaryLightBlue50 = Color(0xff91c6f0);
+  static const primaryLightBlue100 = Color(0xff5fa9e8);
+  static const primaryLightBlue200 = Color(0xff409be0);
+  static const primaryLightBlue300 = Color(0xff2064b8);
+  static const scaffoldBackgroundLightBlue = Color(0xffe7f3fc);
+
+// Light Red Theme
+  static const primaryLightRed0 = Color(0xfffce7e7);
+  static const primaryLightRed25 = Color(0xfff5b5b5);
+  static const primaryLightRed50 = Color(0xfff09191);
+  static const primaryLightRed100 = Color(0xffe85f5f);
+  static const primaryLightRed200 = Color(0xffe04040);
+  static const primaryLightRed300 = Color(0xffb82020);
+  static const scaffoldBackgroundLightRed = Color(0xfffce7e7);
+
+  // Dark Green Theme
+  static const primaryDarkGreen0 = Color(0xff1b2d24);
+  static const primaryDarkGreen25 = Color(0xff2e4a3a);
+  static const primaryDarkGreen50 = Color(0xff3d6a4f);
+  static const primaryDarkGreen100 = Color(0xff4b8a64);
+  static const primaryDarkGreen200 = Color(0xff5aa97a);
+  static const primaryDarkGreen300 = Color(0xff69c891);
+  static const scaffoldBackgroundDarkGreen = Color(0xff1b2d24);
+
+// Dark Blue Theme
+  static const primaryDarkBlue0 = Color(0xff1b2d3a);
+  static const primaryDarkBlue25 = Color(0xff2e4a5e);
+  static const primaryDarkBlue50 = Color(0xff3d6a82);
+  static const primaryDarkBlue100 = Color(0xff4b8aa6);
+  static const primaryDarkBlue200 = Color(0xff5aa9ca);
+  static const primaryDarkBlue300 = Color(0xff69c8ee);
+  static const scaffoldBackgroundDarkBlue = Color(0xff1b2d3a);
+
+// Dark Red Theme
+  static const primaryDarkRed0 = Color(0xff3a1b1b);
+  static const primaryDarkRed25 = Color(0xff5e2e2e);
+  static const primaryDarkRed50 = Color(0xff823d3d);
+  static const primaryDarkRed100 = Color(0xffa64b4b);
+  static const primaryDarkRed200 = Color(0xffca5a5a);
+  static const primaryDarkRed300 = Color(0xffee6969);
+  static const scaffoldBackgroundDarkRed = Color(0xff3a1b1b);
 
   // grey scale
   static const grey900 = Color(0xff0d0d12);
