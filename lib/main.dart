@@ -1,5 +1,7 @@
+import 'package:demo_app/core/utils/theme_mapper.dart';
+
 import 'core/config/theme/cubit/theme_cubit.dart';
-import 'core/config/theme/cubit/theme_state.dart';
+
 import 'screens/demo.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -26,10 +28,10 @@ class DemoApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (_) => ThemeCubit()),
       ],
-      child: BlocBuilder<ThemeCubit, ThemeState>(
+      child: BlocBuilder<ThemeCubit, AppTheme>(
         builder: (context, state) {
           return MaterialApp(
-            theme: state.themeData,
+            theme: state.theme,
             home: const DemoScreen(),
           );
         },

@@ -1,7 +1,9 @@
+import 'package:demo_app/core/utils/theme_mapper.dart';
+
 import '../core/config/theme/app_colors.dart';
 import '../core/config/theme/app_text_styles.dart';
 import '../core/config/theme/extensions/theme_extensions.dart';
-import '../core/config/theme/theme_name_enum.dart';
+
 import '../core/utils/theme_functions.dart';
 import 'package:flutter/material.dart';
 
@@ -69,7 +71,7 @@ class DemoScreen extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     onPressed: () {
-                      toggleTheme(context, ThemeNameEnum.green);
+                      toggleTheme(context, ThemeNames.green);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primaryLightGreen300,
@@ -79,7 +81,7 @@ class DemoScreen extends StatelessWidget {
                   const SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () {
-                      toggleTheme(context, ThemeNameEnum.red);
+                      toggleTheme(context, ThemeNames.red);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primaryLightRed300,
@@ -89,10 +91,30 @@ class DemoScreen extends StatelessWidget {
                   const SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () {
-                      toggleTheme(context, ThemeNameEnum.blue);
+                      toggleTheme(context, ThemeNames.blue);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primaryLightBlue300,
+                    ),
+                    child: const SizedBox(),
+                  ),
+                  const SizedBox(width: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      toggleTheme(context, ThemeNames.yellow);
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primaryLightYellow300,
+                    ),
+                    child: const SizedBox(),
+                  ),
+                  const SizedBox(width: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      toggleTheme(context, ThemeNames.purple);
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primaryLightPurple300,
                     ),
                     child: const SizedBox(),
                   ),
